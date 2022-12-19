@@ -9,6 +9,6 @@ public abstract class Messages {
     }
     public String createMessage(){
 
-        return new Message();
+        return new Message("hi").toString();
     }
 }
