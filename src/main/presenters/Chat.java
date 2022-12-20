@@ -1,11 +1,11 @@
-package main.presenters;
+package presenters;
 
-import main.usecases.sendmessage.MessagePresenter;
-import main.usecases.sendmessage.MessageResponseDTO;
+import Features.SendMessage.MessagePresenter;
+import Features.SendMessage.MessageResponse;
 
 public class Chat implements MessagePresenter {
     @Override
-    public String prepareView(MessageResponseDTO response) {
-        return null;
+    public String prepareView(MessageResponse response) {
+        return response.getText();
     }
 }

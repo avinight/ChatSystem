@@ -6,22 +6,30 @@ import java.util.concurrent.*;
 
 public class Server {
     public static void main(String[] args) throws IOException {
-        // Create ServerSocket object and bind to port 5000
+        // Create a ServerSocket object and bind it to a port (in this case, 5000)
         ServerSocket serverSocket = new ServerSocket(5000);
-        System.out.println("Waiting for client connections...");
 
-        // Create thread pool to handle multiple client connections simultaneously
-        ExecutorService pool = Executors.newFixedThreadPool(10);
-
-        // Continuously accept connections from clients
         while (true) {
-            // Accept connection from client
-            Socket socket = serverSocket.accept();
-            System.out.println("Client connected.");
+            // Accept incoming connections and create a new Socket object to communicate with the client
+            Socket clientSocket = serverSocket.accept();
+            System.out.println("Connected to client.");
 
-            // Create separate thread to handle this client connection
-            ChatHandler handler = new ChatHandler(socket);
-            pool.execute(handler);
+            // Create InputStream and OutputStream objects for reading and writing data
+            InputStream input = clientSocket.getInputStream();
+            OutputStream output = clientSocket.getOutputStream();
+
+            // Read message from the client
+            byte[] message = new byte[1024];
+            int length = input.read(message);
+            String clientMessage = new String(message, 0, length);
+            System.out.println("Message from client: " + clientMessage);
+
+            // Send response to the client
+            String response = "Hello from the server.";
+            output.write(response.getBytes());
+
+            // Close the socket connection
+            clientSocket.close();
         }
     }
 }

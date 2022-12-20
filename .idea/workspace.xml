@@ -5,21 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Initial Setup">
-      <change afterPath="$PROJECT_DIR$/src/main/presenters/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messagable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessagePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SendMessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controllers/SendMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/SendMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/presenters/MessagePresenter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/controllers/SendMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/presenters/MessagePresenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/usecases/sendmessage/MessageData$MessageDataBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/usecases/sendmessage/MessageData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/usecases/sendmessage/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/ChatSystem.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/ChatSystem.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/ChatSystem.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/ChatSystem.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/ChatSystem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/ChatSystem.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/SendMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/presenters/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/presenters/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messagable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/CreateMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/MessageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessagePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/MessagePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/MessageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/SendMessage/MessageResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,34 +123,19 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ChatSystem" />
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Server" />
+      <module name="ChatSystem.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="ChatSystem [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="ChatSystem [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -177,34 +179,59 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ChatSystem [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SendMessageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SendMessageTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SendMessageTest.sendMessageTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SendMessageTest.sendMessageTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Gradle.SendMessageTest" />
+        <item itemvalue="Gradle.SendMessageTest.sendMessageTest" />
         <item itemvalue="Gradle.ChatSystem [build]" />
-        <item itemvalue="Gradle.ChatSystem [buildDependents]" />
         <item itemvalue="Gradle.ChatSystem [clean]" />
-        <item itemvalue="Gradle.ChatSystem [jar]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +245,7 @@
       <updated>1671467718500</updated>
       <workItem from="1671467720794" duration="13596000" />
       <workItem from="1671489018378" duration="1849000" />
-      <workItem from="1671490887840" duration="3894000" />
+      <workItem from="1671490887840" duration="12765000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1671484403433</created>
@@ -248,7 +275,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671490860588</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial Setup">
+      <created>1671495453187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671495453187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial Setup">
+      <created>1671495463473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671495463473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

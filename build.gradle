@@ -1,13 +1,22 @@
 plugins {
-    id 'application'
-    id "io.freefair.lombok" version "6.6"
+    id 'java-library'
+    id 'io.freefair.lombok' version '6.6'
+    id 'com.github.ben-manes.versions' version '0.44.0'
 }
 
-sourceSets.main.java.srcDirs = ['src']
-
-application {
-    mainClass = 'Main'
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
 }
+
 
 java {
     toolchain {
@@ -22,12 +31,13 @@ dependencies {
             'io.javalin:javalin:5.2.0',
             "com.fasterxml.jackson.core:jackson-databind:2.14.0",
             'org.mongodb:mongodb-driver-sync:4.8.1',
-            'org.slf4j:slf4j-simple:2.0.5',
-            'junit:junit:4.13.2'
+            'org.slf4j:slf4j-simple:2.0.5'
     )
     testImplementation(
+            sourceSets.main.output,
             'org.mongodb:mongodb-driver-sync:4.8.1',
-            'org.junit.jupiter:junit-jupiter:5.9.0'
+            'org.junit.jupiter:junit-jupiter:5.9.0',
+            'org.junit.jupiter:junit-jupiter-api:5.9.0'
     )
 }
 
@@ -40,4 +50,19 @@ test {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
+
+apply plugin: 'java-library-distribution'
+
+distributions {
+    main {
+        distributionBaseName = 'my-library'
+        contents {
+            from(sourceSets.main.output)
+            from(configurations.runtimeClasspath)
+        }
+    }
+}
+
+
