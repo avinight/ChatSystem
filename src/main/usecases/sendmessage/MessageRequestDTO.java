@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @Data
 @NoArgsConstructor
-public class MessageData {
+public class MessageRequestDTO {
     private String text;
 }

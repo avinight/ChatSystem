@@ -5,30 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Initial Setup">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/presenters/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messagable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessagePresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/ChatHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/controllers/SendMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/entities/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/presenters/MessagePresenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/usecases/sendmessage/MessageData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChatSystem/main/usecases/sendmessage/Messages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controllers/SendMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controllers/SendMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/presenters/MessagePresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/MessageRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/usecases/sendmessage/Messages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,30 +83,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ChatSystem [build]">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ChatSystem" />
@@ -226,7 +217,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671467718500</updated>
       <workItem from="1671467720794" duration="13596000" />
-      <workItem from="1671489018378" duration="1758000" />
+      <workItem from="1671489018378" duration="1849000" />
+      <workItem from="1671490887840" duration="3894000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1671484403433</created>
@@ -249,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671486860897</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial Setup">
+      <created>1671490860588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671490860588</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
