@@ -1,6 +1,6 @@
-package Features.SendMessage;
+package client.Features.SendMessage;
 
-import main.entities.Message;
+import client.entities.Message;
 
 public class MessageFactory implements CreateMessage {
 

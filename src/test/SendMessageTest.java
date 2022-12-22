@@ -1,14 +1,11 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import Features.SendMessage.MessageFactory;
-import Features.SendMessage.MessageResponse;
-import Features.SendMessage.MessagePresenter;
-import Features.SendMessage.MessageRequest;
+import client.Features.SendMessage.MessageFactory;
+import client.Features.SendMessage.MessageResponse;
+import client.Features.SendMessage.MessagePresenter;
+import client.Features.SendMessage.MessageRequest;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import javax.xml.transform.stream.StreamSource;
 
 public class SendMessageTest {
 

@@ -1,4 +1,4 @@
-package Features.SendMessage;
+package client.Features.SendMessage;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
