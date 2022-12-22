@@ -1,0 +1,79 @@
+plugins {
+    id 'java-library'
+    id 'io.freefair.lombok' version '6.6'
+    id 'com.github.ben-manes.versions' version '0.44.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
+}
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation ('io.socket:socket.io-client:2.1.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation(
+            'javax.websocket:javax.websocket-api:1.1',
+//            'javax.servlet:javax.servlet-api:4.0.1',
+//            'io.socket:socket.io-server:4.0.1',
+//            'io.socket:engine.io-server-jetty:6.2.1',
+            'com.github.nkzawa:socket.io-client:0.6.0',
+            'org.glassfish.tyrus:tyrus-client:2.1.0',
+            'org.glassfish.tyrus:tyrus-server:2.1.0',
+            'org.glassfish.tyrus:tyrus-container-grizzly-server:2.1.0',
+            'commons-codec:commons-codec:1.15',
+            'org.apache.commons:commons-lang3:3.12.0',
+            'io.javalin:javalin:5.2.0',
+            "com.fasterxml.jackson.core:jackson-databind:2.14.0",
+            'org.mongodb:mongodb-driver-sync:4.8.1',
+            'org.slf4j:slf4j-simple:2.0.5'
+    )
+    testImplementation(
+            sourceSets.main.output,
+            'org.mongodb:mongodb-driver-sync:4.8.1',
+            'org.junit.jupiter:junit-jupiter:5.9.0',
+            'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    )
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+apply plugin: 'java-library-distribution'
+
+distributions {
+    main {
+        distributionBaseName = 'my-library'
+        contents {
+            from(sourceSets.main.output)
+            from(configurations.runtimeClasspath)
+        }
+    }
+}
+
+
