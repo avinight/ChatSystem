@@ -1,9 +1,7 @@
 import client.Client;
-import client.Features.SendMessage.MessageFactory;
-import client.Features.SendMessage.SendMessageController;
-import client.presenters.Chat;
-import io.socket.emitter.Emitter;
-import io.socket.engineio.client.Socket;
+import server.Features.SendMessage.MessageFactory;
+import server.Features.SendMessage.SendMessageController;
+import server.presenters.Chat;
 
 import java.util.Scanner;
 

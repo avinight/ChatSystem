@@ -1,10 +1,4 @@
-package client.Features.SendMessage;
-
-import client.Features.SendMessage.CreateMessage;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+package server.Features.SendMessage;
 
 public class SendMessageController {
     CreateMessage messageFactory;

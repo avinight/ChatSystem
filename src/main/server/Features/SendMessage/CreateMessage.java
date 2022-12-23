@@ -1,4 +1,4 @@
-package client.Features.SendMessage;
+package server.Features.SendMessage;
 
 public interface CreateMessage {
     public default String createMessage(MessageRequest data){

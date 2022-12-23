@@ -1,7 +1,7 @@
-package client.presenters;
+package server.presenters;
 
-import client.Features.SendMessage.MessagePresenter;
-import client.Features.SendMessage.MessageResponse;
+import server.Features.SendMessage.MessagePresenter;
+import server.Features.SendMessage.MessageResponse;
 
 public class Chat implements MessagePresenter {
     @Override

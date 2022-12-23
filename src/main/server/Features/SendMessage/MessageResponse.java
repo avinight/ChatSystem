@@ -1,4 +1,4 @@
-package client.Features.SendMessage;
+package server.Features.SendMessage;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @Data
 @NoArgsConstructor
-public class MessageRequest {
+public class MessageResponse {
     private String text;
 }

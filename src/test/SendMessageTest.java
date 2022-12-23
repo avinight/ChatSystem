@@ -1,9 +1,9 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import client.Features.SendMessage.MessageFactory;
-import client.Features.SendMessage.MessageResponse;
-import client.Features.SendMessage.MessagePresenter;
-import client.Features.SendMessage.MessageRequest;
+import server.Features.SendMessage.MessageFactory;
+import server.Features.SendMessage.MessageResponse;
+import server.Features.SendMessage.MessagePresenter;
+import server.Features.SendMessage.MessageRequest;
 
 import org.junit.jupiter.api.Test;
 

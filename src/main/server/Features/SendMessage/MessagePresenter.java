@@ -1,4 +1,4 @@
-package client.Features.SendMessage;
+package server.Features.SendMessage;
 
 public interface MessagePresenter {
     public default String prepareView(MessageResponse response){

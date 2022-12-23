@@ -1,4 +1,4 @@
-package client.entities;
+package server.entities;
 
 public class Message {
     public String text;
