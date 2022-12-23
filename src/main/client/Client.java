@@ -18,7 +18,9 @@ public class Client {
 
     public void connect() {
         socket.connect();
-        
+        // TODO: fix null socket.id() when new socket is created.
+        String id = socket.id();
+        System.out.println(String.format("You connected with id: %s", id));
     }
 
     public void sendMessage(String message) {

@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Fixed bug where it wouldn't display on browser">
-      <change afterPath="$PROJECT_DIR$/src/main/server/script.js" afterDir="false" />
+    <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Fixed formatting">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +199,7 @@
       <workItem from="1671489018378" duration="1849000" />
       <workItem from="1671490887840" duration="15693000" />
       <workItem from="1671721961996" duration="23253000" />
-      <workItem from="1671754140427" duration="8712000" />
+      <workItem from="1671754140427" duration="10649000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1671484403433</created>
@@ -279,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671761454902</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed formatting">
+      <created>1671763720465</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671763720465</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +314,8 @@
     <MESSAGE value="Initial Setup" />
     <MESSAGE value="Changes made:&#10;- Added sockets&#10;- Server and Client" />
     <MESSAGE value="Fixed bug where it wouldn't display on browser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where it wouldn't display on browser" />
+    <MESSAGE value="Fixed formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed formatting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
