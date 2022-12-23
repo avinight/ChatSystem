@@ -8,12 +8,11 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('a user connected');
-    socket.on('chat message', msg => {
-        io.emit('chat message', msg);
-    });
-    socket.on('message', msg => {
-        io.emit('message', msg);
+    console.log(`a user connected to namespace ${socket.adapter.nsp}`);
+    // Listen for the "message" event
+    socket.on('message', (message) => {
+        console.log('received message:', message);
+        io.emit('message', message);
     });
     socket.on('disconnect', () => {
         console.log('user disconnected');

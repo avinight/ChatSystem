@@ -25,7 +25,7 @@ public class Client {
     }
 
     public void onMessage(Emitter.Listener listener) {
-        socket.on("chat message", listener);
+        socket.on("message", listener);
     }
 
     public void disconnect() {
