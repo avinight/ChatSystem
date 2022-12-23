@@ -18,6 +18,7 @@ public class Client {
 
     public void connect() {
         socket.connect();
+        
     }
 
     public void sendMessage(String message) {

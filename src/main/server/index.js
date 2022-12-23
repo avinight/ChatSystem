@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log(`a user connected to namespace ${socket.adapter.nsp}`);
+    console.log(`${socket.id} connected to namespace ${socket.adapter.nsp}`);
     // Listen for the "message" event
     socket.on('message', (message) => {
         console.log('received message:', message);
