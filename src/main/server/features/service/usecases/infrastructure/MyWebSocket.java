@@ -1,8 +1,7 @@
-package server.Features.service;
+package server.features.service.usecases.infrastructure;
 
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.annotations.*;
-import server.presenters.MyWebSocketListener;
 
 import java.io.IOException;
 

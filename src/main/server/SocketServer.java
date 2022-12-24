@@ -7,7 +7,7 @@ import org.eclipse.jetty.server.handler.ContextHandler;
 import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 
-import server.Features.service.controllers.MyContextHandler;
+import server.features.service.usecases.controllers.MyContextHandler;
 
 import java.net.URI;
 

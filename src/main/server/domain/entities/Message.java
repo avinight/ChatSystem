@@ -1,4 +1,4 @@
-package server.entities;
+package server.domain.entities;
 
 public class Message {
     public String text;

@@ -1,4 +1,4 @@
-package server.Features.service.controllers;
+package server.features.service.usecases.controllers;
 
 import jakarta.servlet.Servlet;
 import org.eclipse.jetty.server.handler.ContextHandler;
@@ -7,8 +7,8 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.websocket.server.JettyWebSocketServlet;
 import org.eclipse.jetty.websocket.server.JettyWebSocketServletFactory;
 import org.eclipse.jetty.websocket.server.config.JettyWebSocketServletContainerInitializer;
-import server.Features.service.usecases.MyHttpServlet;
-import server.presenters.MyWebSocketListener;
+import server.features.service.usecases.MyHttpServlet;
+import server.features.service.usecases.infrastructure.MyWebSocketListener;
 
 import java.time.Duration;
 

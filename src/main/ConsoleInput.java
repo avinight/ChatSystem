@@ -1,7 +1,7 @@
 import client.Client;
-import server.Features.SendMessage.MessageFactory;
-import server.Features.SendMessage.SendMessageController;
-import server.presenters.Chat;
+import server.features.SendMessage.application.MessageFactory;
+import server.features.SendMessage.presentation.SendMessageController;
+import server.features.SendMessage.presentation.Chat;
 
 import java.util.Scanner;
 

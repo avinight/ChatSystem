@@ -1,4 +1,4 @@
-package server.presenters;
+package server.features.service.usecases.infrastructure;
 
 import org.eclipse.jetty.websocket.api.Session;
 import org.eclipse.jetty.websocket.api.WebSocketListener;
