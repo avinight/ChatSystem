@@ -4,51 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Fixed formatting">
-      <change afterPath="$PROJECT_DIR$/src/main/server/Features/service/MyHttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/server/Features/service/MyWebSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/server/Features/service/controllers/MyContextHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/server/SocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/server/presenters/MyWebSocketListener.java" afterDir="false" />
+    <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Changed into java_server">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/CreateMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessageFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessagePresenter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessageRequest$MessageRequestBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessageRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessageResponse$MessageResponseBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/MessageResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Features/SendMessage/SendMessageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/entities/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/presenters/Chat.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/CreateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/CreateMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/MessageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/MessageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/MessagePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/MessagePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/MessageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/MessageRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/MessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/MessageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/Features/SendMessage/SendMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/SendMessage/SendMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/entities/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/entities/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/client/presenters/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/presenters/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/client/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/SendMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SendMessageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/unused/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Features/service/MyHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/service/usecases/MyHttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Features/service/MyWebSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/service/MyWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/Features/service/controllers/MyContextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/Features/service/controllers/MyContextHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/SocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/SocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/presenters/MyWebSocketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/presenters/MyWebSocketListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/server/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +214,7 @@
       <workItem from="1671489018378" duration="1849000" />
       <workItem from="1671490887840" duration="15693000" />
       <workItem from="1671721961996" duration="23253000" />
-      <workItem from="1671754140427" duration="38539000" />
+      <workItem from="1671754140427" duration="46153000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <created>1671484403433</created>
@@ -348,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671765398899</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed into java_server">
+      <created>1671832624541</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832624541</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,18 +351,8 @@
     <MESSAGE value="Changes made:&#10;- Added sockets&#10;- Server and Client" />
     <MESSAGE value="Fixed bug where it wouldn't display on browser" />
     <MESSAGE value="Fixed formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed formatting" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/server/Features/service/controllers/MyContextHandler.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Changed into java_server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed into java_server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

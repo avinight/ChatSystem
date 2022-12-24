@@ -26,7 +26,12 @@ public class MyWebSocketListener implements WebSocketListener {
     // Set up a listener to handle incoming events
     @Override
     public void onWebSocketText(String message) {
-        System.out.println("Received message over WebSocket: " + message);
+        System.out.println("Received message over WebSockket: " + message);
+        try {
+            session.getRemote().sendString(message);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         broadcast(message);
     }
 
@@ -37,6 +42,7 @@ public class MyWebSocketListener implements WebSocketListener {
             System.out.println("Error sending message over WebSocket: " + e.getMessage());
         }
     }
+
     // Set to store all open WebSocket sessions
     private Set<Session> sessions = new HashSet<>();
 

@@ -1,4 +1,4 @@
-package server.Features.service;
+package server.Features.service.usecases;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

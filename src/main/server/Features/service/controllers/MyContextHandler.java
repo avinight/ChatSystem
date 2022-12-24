@@ -4,41 +4,49 @@ import jakarta.servlet.Servlet;
 import org.eclipse.jetty.server.handler.ContextHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage;
 import org.eclipse.jetty.websocket.server.JettyWebSocketServlet;
 import org.eclipse.jetty.websocket.server.JettyWebSocketServletFactory;
 import org.eclipse.jetty.websocket.server.config.JettyWebSocketServletContainerInitializer;
-import server.Features.service.MyHttpServlet;
-import server.Features.service.MyWebSocket;
+import server.Features.service.usecases.MyHttpServlet;
 import server.presenters.MyWebSocketListener;
 
+import java.time.Duration;
+
+/**
+ * This class sets up a handler for WebSocket connections.
+ */
 public class MyContextHandler extends ContextHandler {
+
+    /**
+     * Constructor for the MyContextHandler.
+     */
     public MyContextHandler() {
-        // Set up a handler for WebSocket connections
+        // Configure a WebSocketServlet
         Servlet websocketServlet = new JettyWebSocketServlet() {
             @Override
             public void configure(JettyWebSocketServletFactory factory) {
+
+                // Configure default max size of a text message
+                factory.setMaxTextMessageSize(65535);
+
+                // Set the IdleTimeout to 10 minutes
+                factory.setIdleTimeout(Duration.ofMillis(10 * 60 * 1000));
+
                 // Register the WebSocket server factory
-                factory.addMapping("/", (req, res) -> new MyWebSocketListener());
+                factory.addMapping("/ws", (req, res) -> new MyWebSocketListener());
             }
         };
 
         // Set up a handler for context
         ServletContextHandler servletContextHandler = new ServletContextHandler();
 
-        // Add these servlets to the ContextHandler
+        // Add these servlets to the ContextHandler via a ServletHolder which will organise
+        // the loading of the servlet when needed or requested
         servletContextHandler.addServlet(new ServletHolder(websocketServlet), "/ws");
         servletContextHandler.addServlet(new ServletHolder(new MyHttpServlet()), "/");
 
-//        JettyWebSocketServletContainerInitializer.configure(servletContextHandler, null);
-        JettyWebSocketServletContainerInitializer.configure(servletContextHandler, (servletContext, wsContainer) ->
-        {
-            // Configure default max size
-            wsContainer.setMaxTextMessageSize(65535);
-
-            // Add websockets
-            wsContainer.addMapping("/ws", MyWebSocket.class);
-        });
+        // Initialize WebSocket ServletContainer
+        JettyWebSocketServletContainerInitializer.configure(servletContextHandler, null);
 
         // Add the ServletContextHandler to the list of handlers
         setHandler(servletContextHandler);
