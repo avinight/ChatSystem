@@ -7,7 +7,6 @@ var input = document.getElementById('input');
 socket.onopen = function () {
     console.log("WebSocket connection established");
     socket.send(`Hello, ${socket.id}!`);
-
 };
 
 socket.onmessage = function (event) {

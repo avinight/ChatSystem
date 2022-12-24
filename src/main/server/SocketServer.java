@@ -54,7 +54,7 @@ public class SocketServer {
         ResourceHandler resourceHandler = new ResourceHandler();
         resourceHandler.setDirectoriesListed(true);
         resourceHandler.setWelcomeFiles(new String[]{"index.html"});
-        resourceHandler.setResourceBase("src/main/server");
+        resourceHandler.setResourceBase("src/main/client");
         handlers.addHandler(createContextHandler(resourceHandler));
 
         // Set up a ServletContextHandler for WebSocket connections
