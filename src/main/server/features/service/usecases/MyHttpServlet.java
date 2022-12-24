@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-@WebServlet(name = "MyHttpServlet", urlPatterns = {"/Users/frederickmeneses/Documents/CSC207/ChatSystem/node_modules/socket.io/client-dist/socket.io.js"})
+@WebServlet(name = "MyHttpServlet", urlPatterns = {"node_modules/socket.io/client-dist/socket.io.js"})
 public class MyHttpServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
