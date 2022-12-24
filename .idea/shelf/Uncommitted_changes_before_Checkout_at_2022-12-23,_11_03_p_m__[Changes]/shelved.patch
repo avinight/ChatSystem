@@ -1,0 +1,14 @@
+Index: src/main/server/index.js
+===================================================================
+diff --git a/src/main/server/index.js b/src/main/server/index.js
+--- a/src/main/server/index.js	
++++ b/src/main/server/index.js	
+@@ -1,7 +1,7 @@
+ const app = require('express')();
+ const http = require('http').Server(app);
+ const io = require('socket.io')(http);
+-const port = process.env.PORT || 3000;
++const port = process.env.PORT || 8000;
+ 
+ app.get('/', (req, res) => {
+     res.sendFile(__dirname + '/index.html');

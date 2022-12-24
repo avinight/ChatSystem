@@ -3,7 +3,6 @@ var socket = new WebSocket("ws://localhost:3000/ws");
 var messages = document.getElementById('messages');
 var form = document.getElementById('form');
 var input = document.getElementById('input');
-var socket = new WebSocket("ws://localhost:3000/ws");
 
 socket.onopen = function () {
     console.log("WebSocket connection established");

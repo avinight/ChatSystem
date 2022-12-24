@@ -1,0 +1,152 @@
+Index: src/main/client/Client.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/client/Client.java b/src/main/client/Client.java
+--- a/src/main/client/Client.java	
++++ b/src/main/client/Client.java	
+@@ -10,7 +10,7 @@
+ 
+     public Client() {
+         try {
+-            socket = IO.socket("http://localhost:3000");
++            socket = IO.socket("http://localhost:8000");
+         } catch (URISyntaxException e) {
+             e.printStackTrace();
+         }
+Index: src/main/server/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/server/index.html b/src/main/server/index.html
+--- a/src/main/server/index.html	
++++ b/src/main/server/index.html	
+@@ -65,7 +65,29 @@
+     <input autocomplete="off" id="input"/>
+     <button>Send</button>
+ </form>
+-<script src="script.js" type="module"></script>
++<script src="/socket.io/socket.io.js"></script>
++<script>
++    var socket = io();
++
++    var messages = document.getElementById('messages');
++    var form = document.getElementById('form');
++    var input = document.getElementById('input');
++
++    form.addEventListener('submit', function (e) {
++        e.preventDefault();
++        if (input.value) {
++            socket.emit('message', input.value);
++            input.value = '';
++        }
++    });
++
++    socket.on('message', function (message) {
++        var item = document.createElement('li');
++        item.textContent = message;
++        messages.appendChild(item);
++        window.scrollTo(0, document.body.scrollHeight);
++    });
++</script>
+ 
+ </body>
+ </html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,22 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a7a2169a-03f1-4b4c-abfd-209c1e3a7b73" name="Changes" comment="Fixed formatting">
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput$1.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ConsoleInput.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/client/Client.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/ConsoleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ConsoleInput.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/client/Client.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/server/index.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -74,6 +62,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="java_server" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="HighlightingSettingsPerFile">
+@@ -90,28 +83,28 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "Downloaded.Files.Path.Enabled": "false",
+-    "Repository.Attach.Annotations": "false",
+-    "Repository.Attach.JavaDocs": "false",
+-    "Repository.Attach.Sources": "false",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "javascript.nodejs.core.library.configured.version": "19.1.0",
+-    "javascript.nodejs.core.library.typings.version": "18.11.17",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;19.1.0&quot;,
++    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.17&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/main/server" />
