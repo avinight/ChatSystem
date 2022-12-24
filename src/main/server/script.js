@@ -1,10 +1,8 @@
-var socket = io('/ws');
+var socket = new WebSocket("ws://localhost:3000/ws");
 
 var messages = document.getElementById('messages');
 var form = document.getElementById('form');
 var input = document.getElementById('input');
-
-socket.send('Hello, server!');
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();

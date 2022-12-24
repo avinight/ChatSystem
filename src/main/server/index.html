@@ -20,19 +20,25 @@
 <form id="form" action="">
     <input id="input" autocomplete="off" /><button>Send</button>
 </form>
+<script src="script.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 
 <script>
-    // Create a new Socket.IO client
-    var socket = io();
+    var socket = new WebSocket("ws://localhost:3000/ws");
 
-    // Send a message over the WebSocket connection
-    socket.emit('message', 'Hello, server!');
+    socket.onopen = function () {
+        console.log("WebSocket connection established");
+        socket.send("Hello, server!");
+    };
 
-    // Listen for messages from the server
-    socket.on('message', function (message) {
-        console.log('Received message from server:', message);
-    });
+    socket.onmessage = function (event) {
+        console.log("Received message from server:", event.data);
+    };
+
+    socket.onclose = function () {
+        console.log("WebSocket connection closed");
+    };
+
 </script>
 
 </body>

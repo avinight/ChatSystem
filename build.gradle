@@ -29,8 +29,9 @@ dependencies {
         exclude group: 'org.json', module: 'json'
     }
     implementation(
+            'commons-io:commons-io:2.11.0',
             'javax.websocket:javax.websocket-api:1.1',
-//            'javax.servlet:javax.servlet-api:4.0.1',
+            'javax.servlet:javax.servlet-api:4.0.1',
 //            'io.socket:socket.io-server:4.0.1',
 //            'io.socket:engine.io-server-jetty:6.2.1',
             'com.corundumstudio.socketio:netty-socketio:1.7.22',
